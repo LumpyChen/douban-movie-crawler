@@ -21,6 +21,7 @@ for (let i = 0; i<1000000; i++){
   (function(j){
     let count = 2000001-j
     setTimeout(() => {
+      console.log(j)
       fetch(`http://api.douban.com/v2/movie/subject/${count}`)
         .then((body) => {
           console.log(body)
@@ -34,7 +35,7 @@ for (let i = 0; i<1000000; i++){
         }).catch(() => {
           console.log(`fail: http://api.douban.com/v2/movie/subject/${count}`)
       })
-    }, 3000*j)
+    }, 1000*j)
   })(i)
 }
 
