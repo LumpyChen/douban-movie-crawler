@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "semi": [2, never],
+    "max-len": [2, 120, 2],
+    "generator-star-spacing": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "no-console": 0,
+    "global-require": 0,
+    "no-undef": [0, { "typeof": true }],
+    "no-mixed-spaces-and-tabs": 1,
+    "import/extensions": 0
+  },
+}
